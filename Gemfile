@@ -16,12 +16,15 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard'
   gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
-  gem 'terminal-notifier-guard'
+  gem 'selenium-webdriver'
+  gem 'capybara'
+  gem 'terminal-notifier-guard' # for mac os 10.8
 end
 
 group :doc do
